@@ -30,7 +30,7 @@ product_data = {
 }
 
 if st.button("Predict", type='primary'):
-    response = requests.post("https://<user_name>-<space_name>.hf.space/v1/predict", json=product_data)    # Complete the code to enter user name and space name to correctly define the endpoint
+    response = requests.post("https://urban-guacamole-9gqr4776rp5c7jj4-7860.app.github.dev/v1/predict", json=product_data)    # Complete the code to enter user name and space name to correctly define the endpoint
     if response.status_code == 200:
         result = response.json()
         predicted_sales = result["Sales"]
